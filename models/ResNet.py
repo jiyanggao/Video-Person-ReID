@@ -50,16 +50,21 @@ class ResNet50TA(nn.Module):
         self.base = nn.Sequential(*list(resnet50.children())[:-2])
         self.att_gen = 'softmax' # method for attention generation: softmax or sigmoid
         self.feat_dim = 2048 # feature dimension
+        self.middle_dim = 256 # middle layer dimension
         self.classifier = nn.Linear(self.feat_dim, num_classes)
-        self.attention_conv = nn.Conv2d(self.feat_dim, 1, [7,4]) # 7,4 cooresponds to 224, 112 input image size
+        self.attention_conv = nn.Conv2d(self.feat_dim, self.middle_dim, [7,4]) # 7,4 cooresponds to 224, 112 input image size
+        self.attention_tconv = nn.Conv1d(self.middle_dim, 1, 3, padding=1)
     def forward(self, x):
         b = x.size(0)
         t = x.size(1)
         x = x.view(b*t, x.size(2), x.size(3), x.size(4))
         x = self.base(x)
         a = F.relu(self.attention_conv(x))
-        x = F.avg_pool2d(x, x.size()[2:])
+        a = a.view(b, t, self.middle_dim)
+        a = a.permute(0,2,1)
+        a = F.relu(self.attention_tconv(a))
         a = a.view(b, t)
+        x = F.avg_pool2d(x, x.size()[2:])
         if self. att_gen=='softmax':
             a = F.softmax(a, dim=1)
         elif self.att_gen=='sigmoid':
