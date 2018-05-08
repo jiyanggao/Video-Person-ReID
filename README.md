@@ -1,14 +1,14 @@
 # Video-Person-ReID
 
-This is the code repository for our tech report "Revisiting Temporal Modeling for Video-based Person ReID": https://arxiv.org/abs/1805.02104,
+This is the code repository for our tech report "Revisiting Temporal Modeling for Video-based Person ReID": https://arxiv.org/abs/1805.02104.
 If you find this help your research, please cite
 
-@article{gao2018revisiting,
-  title={Revisiting Temporal Modeling for Video-based Person ReID},
-  author={Gao, Jiyang and Nevatia, Ram},
-  journal={arXiv preprint arXiv:1805.02104},
-  year={2018}
-}
+    @article{gao2018revisiting,
+      title={Revisiting Temporal Modeling for Video-based Person ReID},
+      author={Gao, Jiyang and Nevatia, Ram},
+      journal={arXiv preprint arXiv:1805.02104},
+      year={2018}
+    }
 
 ### Introduction
 This repository contains PyTorch implementations of temporal modeling methods for video-based person reID. It is forked from [deep-person-reid](https://github.com/KaiyangZhou/deep-person-reid).. Based on that, I implement (1) video sampling strategy for training and testing, (2) temporal modeling methods including temporal pooling, temporal attention, RNN and 3D conv. The base loss function and basic training framework remain the same as [deep-person-reid](https://github.com/KaiyangZhou/deep-person-reid).
