@@ -1,7 +1,7 @@
 ==========
-Args:Namespace(arch='resnet503d', dataset='mars', eval_step=50, evaluate=False, gamma=0.1, gpu_devices='2', height=224, htri_only=False, lr=0.0003, margin=0.3, max_epoch=800, num_instances=4, pretrained_model='/home/jiyang/Workspace/Works/video-person-reid/3dconv-person-reid/pretrained_models/resnet-50-kinetics.pth', print_freq=80, save_dir='log', seed=1, seq_len=16, start_epoch=0, stepsize=200, test_batch=1, train_batch=32, use_cpu=False, weight_decay=0.0005, width=112, workers=4)
+Args:Namespace(arch='resnet50tp', dataset='mars', eval_step=50, evaluate=False, gamma=0.1, gpu_devices='0', height=224, htri_only=False, lr=0.0003, margin=0.3, max_epoch=800, num_instances=4, pool='avg', pretrained_model='/home/jiyang/Workspace/Works/video-person-reid/3dconv-person-reid/pretrained_models/resnet-50-kinetics.pth', print_freq=80, save_dir='log', seed=1, seq_len=4, start_epoch=0, stepsize=200, test_batch=1, train_batch=32, use_cpu=False, weight_decay=0.0005, width=112, workers=4)
 ==========
-Currently using GPU 2
+Currently using GPU 0
 Initializing dataset mars
 => MARS loaded
 Dataset statistics:
@@ -15,7 +15,1002 @@ Dataset statistics:
   total    |  1251 |    19608
   number of images per tracklet: 2 ~ 920, average 59.5
   ------------------------------
-Initializing model: resnet503d
-Loading checkpoint from '/home/jiyang/Workspace/Works/video-person-reid/3dconv-person-reid/pretrained_models/resnet-50-kinetics.pth'
-Model size: 47.47960M
+Initializing model: resnet50tp
+Model size: 24.78866M
 ==> Epoch 1/800
+==> Epoch 2/800
+==> Epoch 3/800
+==> Epoch 4/800
+==> Epoch 5/800
+==> Epoch 6/800
+==> Epoch 7/800
+==> Epoch 8/800
+==> Epoch 9/800
+==> Epoch 10/800
+==> Epoch 11/800
+==> Epoch 12/800
+==> Epoch 13/800
+==> Epoch 14/800
+==> Epoch 15/800
+==> Epoch 16/800
+==> Epoch 17/800
+==> Epoch 18/800
+==> Epoch 19/800
+==> Epoch 20/800
+==> Epoch 21/800
+==> Epoch 22/800
+==> Epoch 23/800
+==> Epoch 24/800
+==> Epoch 25/800
+==> Epoch 26/800
+==> Epoch 27/800
+==> Epoch 28/800
+==> Epoch 29/800
+==> Epoch 30/800
+==> Epoch 31/800
+==> Epoch 32/800
+==> Epoch 33/800
+==> Epoch 34/800
+==> Epoch 35/800
+==> Epoch 36/800
+==> Epoch 37/800
+==> Epoch 38/800
+==> Epoch 39/800
+==> Epoch 40/800
+==> Epoch 41/800
+==> Epoch 42/800
+==> Epoch 43/800
+==> Epoch 44/800
+==> Epoch 45/800
+==> Epoch 46/800
+==> Epoch 47/800
+==> Epoch 48/800
+==> Epoch 49/800
+==> Epoch 50/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 61.1%
+CMC curve
+Rank-1  : 70.9%
+Rank-5  : 86.5%
+Rank-10 : 90.9%
+Rank-20 : 93.5%
+------------------
+==> Epoch 51/800
+==> Epoch 52/800
+==> Epoch 53/800
+==> Epoch 54/800
+==> Epoch 55/800
+==> Epoch 56/800
+==> Epoch 57/800
+==> Epoch 58/800
+==> Epoch 59/800
+==> Epoch 60/800
+==> Epoch 61/800
+==> Epoch 62/800
+==> Epoch 63/800
+==> Epoch 64/800
+==> Epoch 65/800
+==> Epoch 66/800
+==> Epoch 67/800
+==> Epoch 68/800
+==> Epoch 69/800
+==> Epoch 70/800
+==> Epoch 71/800
+==> Epoch 72/800
+==> Epoch 73/800
+==> Epoch 74/800
+==> Epoch 75/800
+==> Epoch 76/800
+==> Epoch 77/800
+==> Epoch 78/800
+==> Epoch 79/800
+==> Epoch 80/800
+==> Epoch 81/800
+==> Epoch 82/800
+==> Epoch 83/800
+==> Epoch 84/800
+==> Epoch 85/800
+==> Epoch 86/800
+==> Epoch 87/800
+==> Epoch 88/800
+==> Epoch 89/800
+==> Epoch 90/800
+==> Epoch 91/800
+==> Epoch 92/800
+==> Epoch 93/800
+==> Epoch 94/800
+==> Epoch 95/800
+==> Epoch 96/800
+==> Epoch 97/800
+==> Epoch 98/800
+==> Epoch 99/800
+==> Epoch 100/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 63.5%
+CMC curve
+Rank-1  : 73.6%
+Rank-5  : 88.1%
+Rank-10 : 91.4%
+Rank-20 : 93.7%
+------------------
+==> Epoch 101/800
+==> Epoch 102/800
+==> Epoch 103/800
+==> Epoch 104/800
+==> Epoch 105/800
+==> Epoch 106/800
+==> Epoch 107/800
+==> Epoch 108/800
+==> Epoch 109/800
+==> Epoch 110/800
+==> Epoch 111/800
+==> Epoch 112/800
+==> Epoch 113/800
+==> Epoch 114/800
+==> Epoch 115/800
+==> Epoch 116/800
+==> Epoch 117/800
+==> Epoch 118/800
+==> Epoch 119/800
+==> Epoch 120/800
+==> Epoch 121/800
+==> Epoch 122/800
+==> Epoch 123/800
+==> Epoch 124/800
+==> Epoch 125/800
+==> Epoch 126/800
+==> Epoch 127/800
+==> Epoch 128/800
+==> Epoch 129/800
+==> Epoch 130/800
+==> Epoch 131/800
+==> Epoch 132/800
+==> Epoch 133/800
+==> Epoch 134/800
+==> Epoch 135/800
+==> Epoch 136/800
+==> Epoch 137/800
+==> Epoch 138/800
+==> Epoch 139/800
+==> Epoch 140/800
+==> Epoch 141/800
+==> Epoch 142/800
+==> Epoch 143/800
+==> Epoch 144/800
+==> Epoch 145/800
+==> Epoch 146/800
+==> Epoch 147/800
+==> Epoch 148/800
+==> Epoch 149/800
+==> Epoch 150/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 66.7%
+CMC curve
+Rank-1  : 75.2%
+Rank-5  : 89.0%
+Rank-10 : 92.4%
+Rank-20 : 94.7%
+------------------
+==> Epoch 151/800
+==> Epoch 152/800
+==> Epoch 153/800
+==> Epoch 154/800
+==> Epoch 155/800
+==> Epoch 156/800
+==> Epoch 157/800
+==> Epoch 158/800
+==> Epoch 159/800
+==> Epoch 160/800
+==> Epoch 161/800
+==> Epoch 162/800
+==> Epoch 163/800
+==> Epoch 164/800
+==> Epoch 165/800
+==> Epoch 166/800
+==> Epoch 167/800
+==> Epoch 168/800
+==> Epoch 169/800
+==> Epoch 170/800
+==> Epoch 171/800
+==> Epoch 172/800
+==> Epoch 173/800
+==> Epoch 174/800
+==> Epoch 175/800
+==> Epoch 176/800
+==> Epoch 177/800
+==> Epoch 178/800
+==> Epoch 179/800
+==> Epoch 180/800
+==> Epoch 181/800
+==> Epoch 182/800
+==> Epoch 183/800
+==> Epoch 184/800
+==> Epoch 185/800
+==> Epoch 186/800
+==> Epoch 187/800
+==> Epoch 188/800
+==> Epoch 189/800
+==> Epoch 190/800
+==> Epoch 191/800
+==> Epoch 192/800
+==> Epoch 193/800
+==> Epoch 194/800
+==> Epoch 195/800
+==> Epoch 196/800
+==> Epoch 197/800
+==> Epoch 198/800
+==> Epoch 199/800
+==> Epoch 200/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 65.0%
+CMC curve
+Rank-1  : 74.6%
+Rank-5  : 87.7%
+Rank-10 : 91.3%
+Rank-20 : 94.2%
+------------------
+==> Epoch 201/800
+==> Epoch 202/800
+==> Epoch 203/800
+==> Epoch 204/800
+==> Epoch 205/800
+==> Epoch 206/800
+==> Epoch 207/800
+==> Epoch 208/800
+==> Epoch 209/800
+==> Epoch 210/800
+==> Epoch 211/800
+==> Epoch 212/800
+==> Epoch 213/800
+==> Epoch 214/800
+==> Epoch 215/800
+==> Epoch 216/800
+==> Epoch 217/800
+==> Epoch 218/800
+==> Epoch 219/800
+==> Epoch 220/800
+==> Epoch 221/800
+==> Epoch 222/800
+==> Epoch 223/800
+==> Epoch 224/800
+==> Epoch 225/800
+==> Epoch 226/800
+==> Epoch 227/800
+==> Epoch 228/800
+==> Epoch 229/800
+==> Epoch 230/800
+==> Epoch 231/800
+==> Epoch 232/800
+==> Epoch 233/800
+==> Epoch 234/800
+==> Epoch 235/800
+==> Epoch 236/800
+==> Epoch 237/800
+==> Epoch 238/800
+==> Epoch 239/800
+==> Epoch 240/800
+==> Epoch 241/800
+==> Epoch 242/800
+==> Epoch 243/800
+==> Epoch 244/800
+==> Epoch 245/800
+==> Epoch 246/800
+==> Epoch 247/800
+==> Epoch 248/800
+==> Epoch 249/800
+==> Epoch 250/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 74.0%
+CMC curve
+Rank-1  : 80.9%
+Rank-5  : 92.6%
+Rank-10 : 95.1%
+Rank-20 : 96.5%
+------------------
+==> Epoch 251/800
+==> Epoch 252/800
+==> Epoch 253/800
+==> Epoch 254/800
+==> Epoch 255/800
+==> Epoch 256/800
+==> Epoch 257/800
+==> Epoch 258/800
+==> Epoch 259/800
+==> Epoch 260/800
+==> Epoch 261/800
+==> Epoch 262/800
+==> Epoch 263/800
+==> Epoch 264/800
+==> Epoch 265/800
+==> Epoch 266/800
+==> Epoch 267/800
+==> Epoch 268/800
+==> Epoch 269/800
+==> Epoch 270/800
+==> Epoch 271/800
+==> Epoch 272/800
+==> Epoch 273/800
+==> Epoch 274/800
+==> Epoch 275/800
+==> Epoch 276/800
+==> Epoch 277/800
+==> Epoch 278/800
+==> Epoch 279/800
+==> Epoch 280/800
+==> Epoch 281/800
+==> Epoch 282/800
+==> Epoch 283/800
+==> Epoch 284/800
+==> Epoch 285/800
+==> Epoch 286/800
+==> Epoch 287/800
+==> Epoch 288/800
+==> Epoch 289/800
+==> Epoch 290/800
+==> Epoch 291/800
+==> Epoch 292/800
+==> Epoch 293/800
+==> Epoch 294/800
+==> Epoch 295/800
+==> Epoch 296/800
+==> Epoch 297/800
+==> Epoch 298/800
+==> Epoch 299/800
+==> Epoch 300/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 74.8%
+CMC curve
+Rank-1  : 81.4%
+Rank-5  : 93.0%
+Rank-10 : 94.8%
+Rank-20 : 96.7%
+------------------
+==> Epoch 301/800
+==> Epoch 302/800
+==> Epoch 303/800
+==> Epoch 304/800
+==> Epoch 305/800
+==> Epoch 306/800
+==> Epoch 307/800
+==> Epoch 308/800
+==> Epoch 309/800
+==> Epoch 310/800
+==> Epoch 311/800
+==> Epoch 312/800
+==> Epoch 313/800
+==> Epoch 314/800
+==> Epoch 315/800
+==> Epoch 316/800
+==> Epoch 317/800
+==> Epoch 318/800
+==> Epoch 319/800
+==> Epoch 320/800
+==> Epoch 321/800
+==> Epoch 322/800
+==> Epoch 323/800
+==> Epoch 324/800
+==> Epoch 325/800
+==> Epoch 326/800
+==> Epoch 327/800
+==> Epoch 328/800
+==> Epoch 329/800
+==> Epoch 330/800
+==> Epoch 331/800
+==> Epoch 332/800
+==> Epoch 333/800
+==> Epoch 334/800
+==> Epoch 335/800
+==> Epoch 336/800
+==> Epoch 337/800
+==> Epoch 338/800
+==> Epoch 339/800
+==> Epoch 340/800
+==> Epoch 341/800
+==> Epoch 342/800
+==> Epoch 343/800
+==> Epoch 344/800
+==> Epoch 345/800
+==> Epoch 346/800
+==> Epoch 347/800
+==> Epoch 348/800
+==> Epoch 349/800
+==> Epoch 350/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.5%
+CMC curve
+Rank-1  : 82.0%
+Rank-5  : 93.3%
+Rank-10 : 95.3%
+Rank-20 : 96.8%
+------------------
+==> Epoch 351/800
+==> Epoch 352/800
+==> Epoch 353/800
+==> Epoch 354/800
+==> Epoch 355/800
+==> Epoch 356/800
+==> Epoch 357/800
+==> Epoch 358/800
+==> Epoch 359/800
+==> Epoch 360/800
+==> Epoch 361/800
+==> Epoch 362/800
+==> Epoch 363/800
+==> Epoch 364/800
+==> Epoch 365/800
+==> Epoch 366/800
+==> Epoch 367/800
+==> Epoch 368/800
+==> Epoch 369/800
+==> Epoch 370/800
+==> Epoch 371/800
+==> Epoch 372/800
+==> Epoch 373/800
+==> Epoch 374/800
+==> Epoch 375/800
+==> Epoch 376/800
+==> Epoch 377/800
+==> Epoch 378/800
+==> Epoch 379/800
+==> Epoch 380/800
+==> Epoch 381/800
+==> Epoch 382/800
+==> Epoch 383/800
+==> Epoch 384/800
+==> Epoch 385/800
+==> Epoch 386/800
+==> Epoch 387/800
+==> Epoch 388/800
+==> Epoch 389/800
+==> Epoch 390/800
+==> Epoch 391/800
+==> Epoch 392/800
+==> Epoch 393/800
+==> Epoch 394/800
+==> Epoch 395/800
+==> Epoch 396/800
+==> Epoch 397/800
+==> Epoch 398/800
+==> Epoch 399/800
+==> Epoch 400/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 74.5%
+CMC curve
+Rank-1  : 81.1%
+Rank-5  : 92.4%
+Rank-10 : 94.6%
+Rank-20 : 96.2%
+------------------
+==> Epoch 401/800
+==> Epoch 402/800
+==> Epoch 403/800
+==> Epoch 404/800
+==> Epoch 405/800
+==> Epoch 406/800
+==> Epoch 407/800
+==> Epoch 408/800
+==> Epoch 409/800
+==> Epoch 410/800
+==> Epoch 411/800
+==> Epoch 412/800
+==> Epoch 413/800
+==> Epoch 414/800
+==> Epoch 415/800
+==> Epoch 416/800
+==> Epoch 417/800
+==> Epoch 418/800
+==> Epoch 419/800
+==> Epoch 420/800
+==> Epoch 421/800
+==> Epoch 422/800
+==> Epoch 423/800
+==> Epoch 424/800
+==> Epoch 425/800
+==> Epoch 426/800
+==> Epoch 427/800
+==> Epoch 428/800
+==> Epoch 429/800
+==> Epoch 430/800
+==> Epoch 431/800
+==> Epoch 432/800
+==> Epoch 433/800
+==> Epoch 434/800
+==> Epoch 435/800
+==> Epoch 436/800
+==> Epoch 437/800
+==> Epoch 438/800
+==> Epoch 439/800
+==> Epoch 440/800
+==> Epoch 441/800
+==> Epoch 442/800
+==> Epoch 443/800
+==> Epoch 444/800
+==> Epoch 445/800
+==> Epoch 446/800
+==> Epoch 447/800
+==> Epoch 448/800
+==> Epoch 449/800
+==> Epoch 450/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.7%
+CMC curve
+Rank-1  : 82.3%
+Rank-5  : 92.9%
+Rank-10 : 95.2%
+Rank-20 : 96.8%
+------------------
+==> Epoch 451/800
+==> Epoch 452/800
+==> Epoch 453/800
+==> Epoch 454/800
+==> Epoch 455/800
+==> Epoch 456/800
+==> Epoch 457/800
+==> Epoch 458/800
+==> Epoch 459/800
+==> Epoch 460/800
+==> Epoch 461/800
+==> Epoch 462/800
+==> Epoch 463/800
+==> Epoch 464/800
+==> Epoch 465/800
+==> Epoch 466/800
+==> Epoch 467/800
+==> Epoch 468/800
+==> Epoch 469/800
+==> Epoch 470/800
+==> Epoch 471/800
+==> Epoch 472/800
+==> Epoch 473/800
+==> Epoch 474/800
+==> Epoch 475/800
+==> Epoch 476/800
+==> Epoch 477/800
+==> Epoch 478/800
+==> Epoch 479/800
+==> Epoch 480/800
+==> Epoch 481/800
+==> Epoch 482/800
+==> Epoch 483/800
+==> Epoch 484/800
+==> Epoch 485/800
+==> Epoch 486/800
+==> Epoch 487/800
+==> Epoch 488/800
+==> Epoch 489/800
+==> Epoch 490/800
+==> Epoch 491/800
+==> Epoch 492/800
+==> Epoch 493/800
+==> Epoch 494/800
+==> Epoch 495/800
+==> Epoch 496/800
+==> Epoch 497/800
+==> Epoch 498/800
+==> Epoch 499/800
+==> Epoch 500/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.9%
+CMC curve
+Rank-1  : 82.0%
+Rank-5  : 92.9%
+Rank-10 : 95.1%
+Rank-20 : 97.0%
+------------------
+==> Epoch 501/800
+==> Epoch 502/800
+==> Epoch 503/800
+==> Epoch 504/800
+==> Epoch 505/800
+==> Epoch 506/800
+==> Epoch 507/800
+==> Epoch 508/800
+==> Epoch 509/800
+==> Epoch 510/800
+==> Epoch 511/800
+==> Epoch 512/800
+==> Epoch 513/800
+==> Epoch 514/800
+==> Epoch 515/800
+==> Epoch 516/800
+==> Epoch 517/800
+==> Epoch 518/800
+==> Epoch 519/800
+==> Epoch 520/800
+==> Epoch 521/800
+==> Epoch 522/800
+==> Epoch 523/800
+==> Epoch 524/800
+==> Epoch 525/800
+==> Epoch 526/800
+==> Epoch 527/800
+==> Epoch 528/800
+==> Epoch 529/800
+==> Epoch 530/800
+==> Epoch 531/800
+==> Epoch 532/800
+==> Epoch 533/800
+==> Epoch 534/800
+==> Epoch 535/800
+==> Epoch 536/800
+==> Epoch 537/800
+==> Epoch 538/800
+==> Epoch 539/800
+==> Epoch 540/800
+==> Epoch 541/800
+==> Epoch 542/800
+==> Epoch 543/800
+==> Epoch 544/800
+==> Epoch 545/800
+==> Epoch 546/800
+==> Epoch 547/800
+==> Epoch 548/800
+==> Epoch 549/800
+==> Epoch 550/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.8%
+CMC curve
+Rank-1  : 81.7%
+Rank-5  : 93.0%
+Rank-10 : 95.4%
+Rank-20 : 96.8%
+------------------
+==> Epoch 551/800
+==> Epoch 552/800
+==> Epoch 553/800
+==> Epoch 554/800
+==> Epoch 555/800
+==> Epoch 556/800
+==> Epoch 557/800
+==> Epoch 558/800
+==> Epoch 559/800
+==> Epoch 560/800
+==> Epoch 561/800
+==> Epoch 562/800
+==> Epoch 563/800
+==> Epoch 564/800
+==> Epoch 565/800
+==> Epoch 566/800
+==> Epoch 567/800
+==> Epoch 568/800
+==> Epoch 569/800
+==> Epoch 570/800
+==> Epoch 571/800
+==> Epoch 572/800
+==> Epoch 573/800
+==> Epoch 574/800
+==> Epoch 575/800
+==> Epoch 576/800
+==> Epoch 577/800
+==> Epoch 578/800
+==> Epoch 579/800
+==> Epoch 580/800
+==> Epoch 581/800
+==> Epoch 582/800
+==> Epoch 583/800
+==> Epoch 584/800
+==> Epoch 585/800
+==> Epoch 586/800
+==> Epoch 587/800
+==> Epoch 588/800
+==> Epoch 589/800
+==> Epoch 590/800
+==> Epoch 591/800
+==> Epoch 592/800
+==> Epoch 593/800
+==> Epoch 594/800
+==> Epoch 595/800
+==> Epoch 596/800
+==> Epoch 597/800
+==> Epoch 598/800
+==> Epoch 599/800
+==> Epoch 600/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.8%
+CMC curve
+Rank-1  : 82.0%
+Rank-5  : 93.0%
+Rank-10 : 95.4%
+Rank-20 : 96.8%
+------------------
+==> Epoch 601/800
+==> Epoch 602/800
+==> Epoch 603/800
+==> Epoch 604/800
+==> Epoch 605/800
+==> Epoch 606/800
+==> Epoch 607/800
+==> Epoch 608/800
+==> Epoch 609/800
+==> Epoch 610/800
+==> Epoch 611/800
+==> Epoch 612/800
+==> Epoch 613/800
+==> Epoch 614/800
+==> Epoch 615/800
+==> Epoch 616/800
+==> Epoch 617/800
+==> Epoch 618/800
+==> Epoch 619/800
+==> Epoch 620/800
+==> Epoch 621/800
+==> Epoch 622/800
+==> Epoch 623/800
+==> Epoch 624/800
+==> Epoch 625/800
+==> Epoch 626/800
+==> Epoch 627/800
+==> Epoch 628/800
+==> Epoch 629/800
+==> Epoch 630/800
+==> Epoch 631/800
+==> Epoch 632/800
+==> Epoch 633/800
+==> Epoch 634/800
+==> Epoch 635/800
+==> Epoch 636/800
+==> Epoch 637/800
+==> Epoch 638/800
+==> Epoch 639/800
+==> Epoch 640/800
+==> Epoch 641/800
+==> Epoch 642/800
+==> Epoch 643/800
+==> Epoch 644/800
+==> Epoch 645/800
+==> Epoch 646/800
+==> Epoch 647/800
+==> Epoch 648/800
+==> Epoch 649/800
+==> Epoch 650/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.8%
+CMC curve
+Rank-1  : 81.7%
+Rank-5  : 92.9%
+Rank-10 : 95.5%
+Rank-20 : 96.8%
+------------------
+==> Epoch 651/800
+==> Epoch 652/800
+==> Epoch 653/800
+==> Epoch 654/800
+==> Epoch 655/800
+==> Epoch 656/800
+==> Epoch 657/800
+==> Epoch 658/800
+==> Epoch 659/800
+==> Epoch 660/800
+==> Epoch 661/800
+==> Epoch 662/800
+==> Epoch 663/800
+==> Epoch 664/800
+==> Epoch 665/800
+==> Epoch 666/800
+==> Epoch 667/800
+==> Epoch 668/800
+==> Epoch 669/800
+==> Epoch 670/800
+==> Epoch 671/800
+==> Epoch 672/800
+==> Epoch 673/800
+==> Epoch 674/800
+==> Epoch 675/800
+==> Epoch 676/800
+==> Epoch 677/800
+==> Epoch 678/800
+==> Epoch 679/800
+==> Epoch 680/800
+==> Epoch 681/800
+==> Epoch 682/800
+==> Epoch 683/800
+==> Epoch 684/800
+==> Epoch 685/800
+==> Epoch 686/800
+==> Epoch 687/800
+==> Epoch 688/800
+==> Epoch 689/800
+==> Epoch 690/800
+==> Epoch 691/800
+==> Epoch 692/800
+==> Epoch 693/800
+==> Epoch 694/800
+==> Epoch 695/800
+==> Epoch 696/800
+==> Epoch 697/800
+==> Epoch 698/800
+==> Epoch 699/800
+==> Epoch 700/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.9%
+CMC curve
+Rank-1  : 81.7%
+Rank-5  : 92.9%
+Rank-10 : 95.4%
+Rank-20 : 96.8%
+------------------
+==> Epoch 701/800
+==> Epoch 702/800
+==> Epoch 703/800
+==> Epoch 704/800
+==> Epoch 705/800
+==> Epoch 706/800
+==> Epoch 707/800
+==> Epoch 708/800
+==> Epoch 709/800
+==> Epoch 710/800
+==> Epoch 711/800
+==> Epoch 712/800
+==> Epoch 713/800
+==> Epoch 714/800
+==> Epoch 715/800
+==> Epoch 716/800
+==> Epoch 717/800
+==> Epoch 718/800
+==> Epoch 719/800
+==> Epoch 720/800
+==> Epoch 721/800
+==> Epoch 722/800
+==> Epoch 723/800
+==> Epoch 724/800
+==> Epoch 725/800
+==> Epoch 726/800
+==> Epoch 727/800
+==> Epoch 728/800
+==> Epoch 729/800
+==> Epoch 730/800
+==> Epoch 731/800
+==> Epoch 732/800
+==> Epoch 733/800
+==> Epoch 734/800
+==> Epoch 735/800
+==> Epoch 736/800
+==> Epoch 737/800
+==> Epoch 738/800
+==> Epoch 739/800
+==> Epoch 740/800
+==> Epoch 741/800
+==> Epoch 742/800
+==> Epoch 743/800
+==> Epoch 744/800
+==> Epoch 745/800
+==> Epoch 746/800
+==> Epoch 747/800
+==> Epoch 748/800
+==> Epoch 749/800
+==> Epoch 750/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.9%
+CMC curve
+Rank-1  : 81.8%
+Rank-5  : 93.2%
+Rank-10 : 95.7%
+Rank-20 : 96.9%
+------------------
+==> Epoch 751/800
+==> Epoch 752/800
+==> Epoch 753/800
+==> Epoch 754/800
+==> Epoch 755/800
+==> Epoch 756/800
+==> Epoch 757/800
+==> Epoch 758/800
+==> Epoch 759/800
+==> Epoch 760/800
+==> Epoch 761/800
+==> Epoch 762/800
+==> Epoch 763/800
+==> Epoch 764/800
+==> Epoch 765/800
+==> Epoch 766/800
+==> Epoch 767/800
+==> Epoch 768/800
+==> Epoch 769/800
+==> Epoch 770/800
+==> Epoch 771/800
+==> Epoch 772/800
+==> Epoch 773/800
+==> Epoch 774/800
+==> Epoch 775/800
+==> Epoch 776/800
+==> Epoch 777/800
+==> Epoch 778/800
+==> Epoch 779/800
+==> Epoch 780/800
+==> Epoch 781/800
+==> Epoch 782/800
+==> Epoch 783/800
+==> Epoch 784/800
+==> Epoch 785/800
+==> Epoch 786/800
+==> Epoch 787/800
+==> Epoch 788/800
+==> Epoch 789/800
+==> Epoch 790/800
+==> Epoch 791/800
+==> Epoch 792/800
+==> Epoch 793/800
+==> Epoch 794/800
+==> Epoch 795/800
+==> Epoch 796/800
+==> Epoch 797/800
+==> Epoch 798/800
+==> Epoch 799/800
+==> Epoch 800/800
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
