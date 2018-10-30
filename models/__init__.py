@@ -4,7 +4,7 @@ from .ResNet import *
 
 __factory = {
     'resnet50tp': ResNet50TP,
-    'resnet50ta': ResNet50TP,
+    'resnet50ta': ResNet50TA,
     'resnet50rnn': ResNet50RNN,
 }
 
